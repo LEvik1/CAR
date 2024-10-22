@@ -1,0 +1,454 @@
+@import 'style.css';
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body .header {
+  width: 100%;
+  height: 50px;
+  padding-top: 50px;
+  background-color: 0, 0, 0, 0.5;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .header .head {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .header .head .logo {
+  width: 135px;
+}
+body .header .head .logo a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: none;
+}
+body .header .head .servs {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .header .head .servs a {
+  text-decoration: none;
+  color: rgb(182, 182, 182);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: none;
+}
+body .header .head .servs a:hover {
+  text-decoration: underline;
+}
+body .header .head .sign_up {
+  width: 250px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+body .header .head .sign_up .hr_sign {
+  height: 25px;
+  width: 2px;
+  background-color: rgb(91, 91, 79);
+}
+body .header .head .sign_up button {
+  text-decoration: none;
+  color: rgb(151, 1, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: none;
+  border: none;
+  background: none;
+  padding: 15px 25px;
+  transition: 0.2s ease-in;
+}
+body .header .head .sign_up button:hover {
+  background: rgb(189, 70, 70);
+  color: white;
+  border-radius: 50px;
+}
+body main .backs {
+  display: none;
+}
+body main .back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body main .back a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  font-family: none;
+  margin-bottom: 10px;
+}
+body main .jakor {
+  position: fixed;
+  z-index: 10;
+  margin-left: 95%;
+  margin-top: 40%;
+  background-color: rgb(189, 85, 153);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body main .jakor img {
+  width: 30px;
+  height: 30px;
+}
+body main .sec1 {
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background-color: rgb(90, 63, 53);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body main .sec1 .sec_1 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+body main .sec1 .sec_1 h2 {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+}
+body main .sec1 .sec_1 h1 {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 55px;
+  font-weight: 800;
+  font-family: none;
+}
+body .sec2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .sec2 .sec_2 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+body .sec2 .sec_2 .cars_hide {
+  display: none;
+}
+body .sec2 .sec_2 .cars {
+  width: 900px;
+  padding-top: 20px;
+}
+body .sec2 .sec_2 .cars .car_1 {
+  width: 900px;
+}
+body .sec2 .sec_2 .cars .car_2 {
+  width: 350px;
+}
+body .sec2 .sec_2 .cars .car_3 {
+  width: 900px;
+}
+body .sec2 .sec_2 .cars .car_4 {
+  width: 350px;
+}
+body .sec2 .sec_2 .cars .car_5 {
+  width: 900px;
+  height: 700px;
+}
+body .sec2 .sec_2 .cars .car_6 {
+  width: 350px;
+}
+body .sec2 .sec_2 .menu_car {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 20px;
+}
+body .sec2 .sec_2 .menu_car .price h1 {
+  text-decoration: none;
+  color: black;
+  font-size: 55px;
+  font-weight: 800;
+  font-family: none;
+  width: 370px;
+}
+body .sec2 .sec_2 .menu_car .price h3 {
+  text-decoration: none;
+  color: rgb(152, 152, 152);
+  font-size: 21px;
+  font-weight: 800;
+  font-family: none;
+  width: 150px;
+  margin: 25px 0 10px 0;
+}
+body .sec2 .sec_2 .menu_car .price h2 {
+  text-decoration: none;
+  color: black;
+  font-size: 45px;
+  font-weight: 400;
+  font-family: none;
+  width: 150px;
+}
+body .sec2 .sec_2 .menu_car .price p {
+  text-decoration: none;
+  color: rgb(152, 152, 152);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: none;
+  width: 450px;
+  margin-top: 25px;
+}
+body .sec2 .sec_2 .menu_car .plus_minus {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 260px;
+  margin: 50px 0 40px 0;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .minus {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: none;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .minus:hover {
+  color: white;
+  background: black;
+  font-size: 30px;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .number_pl_mn {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .plus {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: none;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  transition: all 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .plus:hover {
+  color: white;
+  background: black;
+  font-size: 35px;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .b_now {
+  text-decoration: none;
+  color: rgb(151, 1, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: none;
+  border: none;
+  background: none;
+  padding: 15px 25px;
+  transition: 0.2s ease-in;
+}
+body .sec2 .sec_2 .menu_car .plus_minus .b_now:hover {
+  background: rgb(189, 70, 70);
+  color: white;
+  border-radius: 50px;
+}
+body .sec2 .sec_2 .menu_car .specific {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px 25px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_2 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_2 p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_3 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_3 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_3 p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_4 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_4 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_4 p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_5 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_5 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_5 p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_6 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  width: 130px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_6 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+body .sec2 .sec_2 .menu_car .specific .spc_6 p {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: none;
+}
+body .sec2 .sec_2 .menu_car .color_car p {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  font-family: none;
+  margin-bottom: 20px;
+}
+body .sec2 .sec_2 .menu_car .color_car .white {
+  background-color: white;
+  border: 1px solid;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}
+body .sec2 .sec_2 .menu_car .color_car .black {
+  background-color: black;
+  border: 1px solid;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px;
+}
+body .sec2 .sec_2 .menu_car .color_car .blue {
+  background-color: blue;
+  border: 1px solid;
+  border-color: blue;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+}/*# sourceMappingURL=style.css.map */

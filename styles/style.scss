@@ -1,0 +1,343 @@
+@import 'style.css';
+@mixin flex ($ds,$jc,$ai,$fd) {
+    display: $ds;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+};
+@mixin a ($td,$col,$fs,$fw,$ff){
+    text-decoration: $td;
+    color: $col;
+    font-size: $fs;
+    font-weight: $fw;
+    font-family: $ff;
+}
+* {
+    box-sizing: border-box;padding:0; margin: 0;
+}
+// ----------------------------------------- HEADER ----------------------------------------------
+ 
+body {
+    .header {
+        width: 100%;
+        height: 50px;
+        padding-top: 50px;
+        background-color: (0,0,0,0.5);
+        position: fixed;
+        z-index: 10;
+        @include flex(flex,center,center,row);
+        .head {
+            width: 90%;
+            @include flex(flex,space-between,center,row);
+            .logo {
+                width: 135px;
+                a {
+                    @include a (none,white,25px,800,none);
+                }
+            }
+            .servs {
+                width: 400px;
+                @include flex(flex,space-between,center,row);
+                a {
+                    @include a (none,rgb(182, 182, 182),18px,400,none);
+                    
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+            .sign_up {
+                width: 250px;
+                height: 40px;
+                @include flex(flex,space-between,center,row);
+                .hr_sign {
+                    height: 25px;
+                    width: 2px;
+                    background-color: rgb(91, 91, 79);
+                }
+                button {
+                    @include a (none,rgb(151, 1, 1),16px,400,none);
+                    border: none;
+                    background: none;
+                    padding: 15px 25px;
+                    transition: 0.2s ease-in;
+                }
+                button:hover {
+                    background: rgb(189, 70, 70);
+                    color: white;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    // -------------------------------------- MAIN ---------------------------------------------------
+    main {
+        .backs {
+            display: none;
+        }
+        .back {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 11;
+            @include flex(flex,center,center,column);
+            a {
+                @include a (none,white,25px,800,none);
+                margin-bottom: 10px;
+            }
+        }
+        .jakor {
+            position: fixed;
+            z-index: 10;
+            margin-left: 95%;
+            margin-top: 40%;
+            background-color: rgb(189, 85, 153);
+            border-radius: 50px;
+            width: 50px;
+            height: 50px;
+            @include flex(flex,center,center,row);
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .sec1 {
+            width: 100%;
+            padding-top: 150px;
+            padding-bottom: 50px;
+            background-color: rgb(90, 63, 53);
+            @include flex(flex,center,center,row);
+            .sec_1 {
+                width: 90%;
+                @include flex(flex,center,start,column);
+                h2 {
+                    @include a (none,white,18px,800,none);
+                }
+                h1 {
+                    margin-top: 20px;
+                    @include a (none,white,55px,800,none);
+                }
+            }
+        }
+    }
+    .sec2 {
+        width: 100%;
+        @include flex(flex,center,center,column);
+        .sec_2 {
+            width: 90%;
+            @include flex(flex,center,center,row);
+            .cars_hide {
+                display: none;
+            }
+            .cars {
+                width: 900px;
+                padding-top: 20px;
+                .car_1 {
+                    width: 900px;
+                }
+                .car_2 {
+                    width:350px;
+                }
+                .car_3 {
+                    width: 900px;
+                }
+                .car_4 {
+                    width: 350px;
+                }
+                .car_5 {
+                    width:900px;
+                    height: 700px;
+                }
+                .car_6 {
+                    width: 350px;
+                }
+            }
+            .menu_car {
+                @include flex(flex,center,start,column);
+                padding-left: 20px;
+                .price {
+                    h1 {
+                        @include a (none,black,55px,800,none);
+                        width: 370px;
+                    }
+                    h3 {
+                        @include a (none,rgb(152, 152, 152),21px,800,none);
+                        width: 150px;
+                        margin: 25px 0 10px 0;
+                    }
+                    h2 {
+                        @include a (none,black,45px,400,none);
+                        width: 150px;
+                    } 
+                    p {
+                        @include a (none,rgb(152, 152, 152),18px,400,none);
+                        width: 450px;
+                        margin-top: 25px;
+                    }
+                }
+                .plus_minus {
+                    @include flex(flex,space-between,center,row);
+                    width: 260px;
+                    margin: 50px 0 40px 0;
+                    .minus {
+                        @include a (none,black,25px,400,none);
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid;
+                        transition: all 0.2s ease-in;
+                        @include flex(flex,center,center,column);
+                    }
+                    .minus:hover {
+                        color: white;
+                        background: black;
+                        font-size: 30px;
+                    }
+                    .number_pl_mn {
+                        @include a (none,black,35px,400,none);
+                    }
+                    .plus {
+                        @include a (none,black,25px,400,none);
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                        border: 1px solid;
+                        transition: all 0.2s ease-in;
+                        @include flex(flex,center,center,column);
+                    }
+                    .plus:hover {
+                        color: white;
+                        background: black;
+                        font-size: 35px;
+                    }
+                    .b_now {
+                            @include a (none,rgb(151, 1, 1),16px,400,none);
+                            border: none;
+                            background: none;
+                            padding: 15px 25px;
+                            transition: 0.2s ease-in;
+                    }
+                    .b_now:hover {
+                        background: rgb(189, 70, 70);
+                        color: white;
+                        border-radius: 50px;
+                    }
+                }
+                .specific {
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(5,1fr);
+                    gap: 10px 25px ;
+                    .spc_1 {
+                        grid-column: 1/2;
+                        grid-row: 1/2;
+                        
+                    }
+                    .spc_2 {
+                        grid-column: 1/2;
+                        grid-row: 2/3;
+                        @include flex(flex,start,center,row);
+                        width: 130px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right:5px;
+                        }
+                        p {
+                            @include a (none,black,18px,800,none);
+                        }
+                    }
+                    .spc_3 {
+                        grid-column: 2/3;
+                        grid-row: 2/3;
+                        @include flex(flex,start,center,row);
+                        width: 130px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right:5px;
+                        }
+                        p {
+                            @include a (none,black,18px,800,none);
+                        }
+                    }
+                    .spc_4 {
+                        grid-column: 1/2;
+                        grid-row: 3/4;
+                        @include flex(flex,start,center,row);
+                        width: 130px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right:5px;
+                        }
+                        p {
+                            @include a (none,black,18px,800,none);
+                        }
+                    }
+                    .spc_5 {
+                        grid-column: 2/3;
+                        grid-row: 3/4;
+                        @include flex(flex,start,center,row);
+                        width: 130px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right:5px;
+                        }
+                        p {
+                           @include a (none,black,18px,800,none); 
+                        }
+                    }
+                    .spc_6 {
+                        grid-column: 1/2;
+                        grid-row: 4/5;
+                        @include flex(flex,start,center,row);
+                        width: 130px;
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            margin-right:5px;
+                        }
+                        p {
+                            @include a (none,black,20px,500,none);
+                        }
+                    }
+                }
+                .color_car {
+                    p {
+                        @include a (none,black,18px,800,none);
+                        margin-bottom: 20px;
+                    }
+                    .white {
+                        background-color: white;
+                        border: 1px solid;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                    .black {
+                        background-color: black;
+                        border: 1px solid;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                        margin: 0 15px;
+                    }
+                    .blue {
+                        background-color: blue;
+                        border: 1px solid;
+                        border-color: blue;
+                        border-radius: 50px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+//  -------------------------------------- FOOTER --------------------------------------------------
