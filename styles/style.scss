@@ -22,7 +22,6 @@ body {
         width: 100%;
         height: 50px;
         padding-top: 50px;
-        background-color: (0,0,0,0.5);
         position: fixed;
         z-index: 10;
         @include flex(flex,center,center,row);
@@ -32,14 +31,14 @@ body {
             .logo {
                 width: 135px;
                 a {
-                    @include a (none,white,25px,800,none);
+                    @include a (none,white,25px,800,Syne);
                 }
             }
             .servs {
                 width: 400px;
                 @include flex(flex,space-between,center,row);
                 a {
-                    @include a (none,rgb(182, 182, 182),18px,400,none);
+                    @include a (none,rgb(255, 255, 255),18px,400,Syne);
                     
                 }
                 a:hover {
@@ -56,16 +55,17 @@ body {
                     background-color: rgb(91, 91, 79);
                 }
                 button {
-                    @include a (none,rgb(151, 1, 1),16px,400,none);
+                    @include a (none,rgb(151, 1, 1),16px,400,Syne);
                     border: none;
                     background: none;
                     padding: 15px 25px;
                     transition: 0.2s ease-in;
+                    border: 1px solid rgb(189, 70, 70);
+                    border-radius: 50px;
                 }
                 button:hover {
                     background: rgb(189, 70, 70);
                     color: white;
-                    border-radius: 50px;
                 }
             }
         }
@@ -84,7 +84,7 @@ body {
             z-index: 11;
             @include flex(flex,center,center,column);
             a {
-                @include a (none,white,25px,800,none);
+                @include a (none,white,25px,800,Syne);
                 margin-bottom: 10px;
             }
         }
@@ -93,31 +93,34 @@ body {
             z-index: 10;
             margin-left: 95%;
             margin-top: 40%;
-            background-color: rgb(189, 85, 153);
+            background-color: #FD3B3B;
             border-radius: 50px;
             width: 50px;
             height: 50px;
             @include flex(flex,center,center,row);
-            img {
-                width: 30px;
-                height: 30px;
+            h1 {
+                font-size: 45px;
+                height: 40px;
             }
         }
         .sec1 {
             width: 100%;
             padding-top: 150px;
             padding-bottom: 50px;
-            background-color: rgb(90, 63, 53);
+            background-image: url(../photo/a8ada61ecf308588b0e927a753936952.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position:center;
             @include flex(flex,center,center,row);
             .sec_1 {
                 width: 90%;
                 @include flex(flex,center,start,column);
                 h2 {
-                    @include a (none,white,18px,800,none);
+                    @include a (none,white,18px,800,Syne);
                 }
                 h1 {
                     margin-top: 20px;
-                    @include a (none,white,55px,800,none);
+                    @include a (none,white,55px,800,Syne);
                 }
             }
         }
@@ -129,60 +132,70 @@ body {
             width: 90%;
             @include flex(flex,center,center,row);
             .cars_hide {
-                display: none;
+                width: 500px !important;
             }
             .cars {
                 width: 900px;
                 padding-top: 20px;
-                .car_1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .car_1_div {
+                    .car_1 {
+                        width: 700px;
+                    }           
+                }
+                .car_all_div {
                     width: 900px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .car_2 {
+                        width:240px;
+                    }
+                    .car_3 {
+                        width: 240px;
+                    }
+                    .car_4 {
+                        width: 240px;
+                    }     
+                    .hov_car {
+                        border: 1px solid #FD3B3B;
+                    }
                 }
-                .car_2 {
-                    width:350px;
-                }
-                .car_3 {
-                    width: 900px;
-                }
-                .car_4 {
-                    width: 350px;
-                }
-                .car_5 {
-                    width:900px;
-                    height: 700px;
-                }
-                .car_6 {
-                    width: 350px;
-                }
+                
             }
             .menu_car {
                 @include flex(flex,center,start,column);
                 padding-left: 20px;
                 .price {
+                    padding-top: 100px;
                     h1 {
-                        @include a (none,black,55px,800,none);
-                        width: 370px;
+                        @include a (none,black,45px,800,Syne);
+                        width: 550px;
                     }
                     h3 {
-                        @include a (none,rgb(152, 152, 152),21px,800,none);
-                        width: 150px;
+                        @include a (none,rgb(152, 152, 152),21px,600,Syne);
+                        width: 240px;
                         margin: 25px 0 10px 0;
                     }
                     h2 {
-                        @include a (none,black,45px,400,none);
+                        @include a (none,black,45px,500,Syne);
                         width: 150px;
                     } 
                     p {
-                        @include a (none,rgb(152, 152, 152),18px,400,none);
+                        @include a (none,rgb(152, 152, 152),18px,500,Syne);
                         width: 450px;
                         margin-top: 25px;
                     }
                 }
                 .plus_minus {
                     @include flex(flex,space-between,center,row);
-                    width: 260px;
+                    width: 300px;
                     margin: 50px 0 40px 0;
                     .minus {
-                        @include a (none,black,25px,400,none);
+                        @include a (none,black,25px,400,Syne);
                         border-radius: 50px;
                         width: 30px;
                         height: 30px;
@@ -196,10 +209,10 @@ body {
                         font-size: 30px;
                     }
                     .number_pl_mn {
-                        @include a (none,black,35px,400,none);
+                        @include a (none,black,45px,500,Syne);
                     }
                     .plus {
-                        @include a (none,black,25px,400,none);
+                        @include a (none,black,25px,400,Syne);
                         border-radius: 50px;
                         width: 30px;
                         height: 30px;
@@ -213,16 +226,17 @@ body {
                         font-size: 35px;
                     }
                     .b_now {
-                            @include a (none,rgb(151, 1, 1),16px,400,none);
+                            @include a (none,rgb(151, 1, 1),16px,700,Syne);
                             border: none;
                             background: none;
                             padding: 15px 25px;
                             transition: 0.2s ease-in;
+                            border: 1px solid rgb(189, 70, 70);
+                            border-radius: 50px;
                     }
                     .b_now:hover {
                         background: rgb(189, 70, 70);
                         color: white;
-                        border-radius: 50px;
                     }
                 }
                 .specific {
@@ -233,7 +247,7 @@ body {
                     .spc_1 {
                         grid-column: 1/2;
                         grid-row: 1/2;
-                        
+                        @include a (none,black,18px,500,Syne);
                     }
                     .spc_2 {
                         grid-column: 1/2;
@@ -246,7 +260,7 @@ body {
                             margin-right:5px;
                         }
                         p {
-                            @include a (none,black,18px,800,none);
+                            @include a (none,black,18px,500,Syne);
                         }
                     }
                     .spc_3 {
@@ -260,7 +274,7 @@ body {
                             margin-right:5px;
                         }
                         p {
-                            @include a (none,black,18px,800,none);
+                            @include a (none,black,18px,500,Syne);
                         }
                     }
                     .spc_4 {
@@ -274,7 +288,7 @@ body {
                             margin-right:5px;
                         }
                         p {
-                            @include a (none,black,18px,800,none);
+                            @include a (none,black,18px,500,Syne);
                         }
                     }
                     .spc_5 {
@@ -288,7 +302,7 @@ body {
                             margin-right:5px;
                         }
                         p {
-                           @include a (none,black,18px,800,none); 
+                           @include a (none,black,18px,500,Syne); 
                         }
                     }
                     .spc_6 {
@@ -302,17 +316,17 @@ body {
                             margin-right:5px;
                         }
                         p {
-                            @include a (none,black,20px,500,none);
+                            @include a (none,black,20px,500,Syne);
                         }
                     }
                 }
                 .color_car {
                     p {
-                        @include a (none,black,18px,800,none);
+                        @include a (none,black,18px,500,Syne);
                         margin-bottom: 20px;
                     }
-                    .white {
-                        background-color: white;
+                    .red {
+                        background-color: #FD3B3B;
                         border: 1px solid;
                         border-radius: 50px;
                         width: 30px;
@@ -326,10 +340,10 @@ body {
                         height: 30px;
                         margin: 0 15px;
                     }
-                    .blue {
-                        background-color: blue;
+                    .white {
+                        background-color: white;
                         border: 1px solid;
-                        border-color: blue;
+                        border-color: black;
                         border-radius: 50px;
                         width: 30px;
                         height: 30px;
@@ -341,3 +355,11 @@ body {
 
 }
 //  -------------------------------------- FOOTER --------------------------------------------------
+
+
+
+
+@font-face {
+    font-family: Syne;
+    src: url(/shrift/Syne-VariableFont_wght.ttf);
+}

@@ -9,7 +9,6 @@ body .header {
   width: 100%;
   height: 50px;
   padding-top: 50px;
-  background-color: 0, 0, 0, 0.5;
   position: fixed;
   z-index: 10;
   display: flex;
@@ -32,7 +31,7 @@ body .header .head .logo a {
   color: white;
   font-size: 25px;
   font-weight: 800;
-  font-family: none;
+  font-family: Syne;
 }
 body .header .head .servs {
   width: 400px;
@@ -43,10 +42,10 @@ body .header .head .servs {
 }
 body .header .head .servs a {
   text-decoration: none;
-  color: rgb(182, 182, 182);
+  color: rgb(255, 255, 255);
   font-size: 18px;
   font-weight: 400;
-  font-family: none;
+  font-family: Syne;
 }
 body .header .head .servs a:hover {
   text-decoration: underline;
@@ -69,16 +68,17 @@ body .header .head .sign_up button {
   color: rgb(151, 1, 1);
   font-size: 16px;
   font-weight: 400;
-  font-family: none;
+  font-family: Syne;
   border: none;
   background: none;
   padding: 15px 25px;
   transition: 0.2s ease-in;
+  border: 1px solid rgb(189, 70, 70);
+  border-radius: 50px;
 }
 body .header .head .sign_up button:hover {
   background: rgb(189, 70, 70);
   color: white;
-  border-radius: 50px;
 }
 body main .backs {
   display: none;
@@ -99,7 +99,7 @@ body main .back a {
   color: white;
   font-size: 25px;
   font-weight: 800;
-  font-family: none;
+  font-family: Syne;
   margin-bottom: 10px;
 }
 body main .jakor {
@@ -107,7 +107,7 @@ body main .jakor {
   z-index: 10;
   margin-left: 95%;
   margin-top: 40%;
-  background-color: rgb(189, 85, 153);
+  background-color: #FD3B3B;
   border-radius: 50px;
   width: 50px;
   height: 50px;
@@ -116,15 +116,18 @@ body main .jakor {
   align-items: center;
   flex-direction: row;
 }
-body main .jakor img {
-  width: 30px;
-  height: 30px;
+body main .jakor h1 {
+  font-size: 45px;
+  height: 40px;
 }
 body main .sec1 {
   width: 100%;
   padding-top: 150px;
   padding-bottom: 50px;
-  background-color: rgb(90, 63, 53);
+  background-image: url(../photo/a8ada61ecf308588b0e927a753936952.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +145,7 @@ body main .sec1 .sec_1 h2 {
   color: white;
   font-size: 18px;
   font-weight: 800;
-  font-family: none;
+  font-family: Syne;
 }
 body main .sec1 .sec_1 h1 {
   margin-top: 20px;
@@ -150,7 +153,7 @@ body main .sec1 .sec_1 h1 {
   color: white;
   font-size: 55px;
   font-weight: 800;
-  font-family: none;
+  font-family: Syne;
 }
 body .sec2 {
   width: 100%;
@@ -167,30 +170,36 @@ body .sec2 .sec_2 {
   flex-direction: row;
 }
 body .sec2 .sec_2 .cars_hide {
-  display: none;
+  width: 500px !important;
 }
 body .sec2 .sec_2 .cars {
   width: 900px;
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-body .sec2 .sec_2 .cars .car_1 {
+body .sec2 .sec_2 .cars .car_1_div .car_1 {
+  width: 700px;
+}
+body .sec2 .sec_2 .cars .car_all_div {
   width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-body .sec2 .sec_2 .cars .car_2 {
-  width: 350px;
+body .sec2 .sec_2 .cars .car_all_div .car_2 {
+  width: 240px;
 }
-body .sec2 .sec_2 .cars .car_3 {
-  width: 900px;
+body .sec2 .sec_2 .cars .car_all_div .car_3 {
+  width: 240px;
 }
-body .sec2 .sec_2 .cars .car_4 {
-  width: 350px;
+body .sec2 .sec_2 .cars .car_all_div .car_4 {
+  width: 240px;
 }
-body .sec2 .sec_2 .cars .car_5 {
-  width: 900px;
-  height: 700px;
-}
-body .sec2 .sec_2 .cars .car_6 {
-  width: 350px;
+body .sec2 .sec_2 .cars .car_all_div .hov_car {
+  border: 1px solid #FD3B3B;
 }
 body .sec2 .sec_2 .menu_car {
   display: flex;
@@ -199,37 +208,40 @@ body .sec2 .sec_2 .menu_car {
   flex-direction: column;
   padding-left: 20px;
 }
+body .sec2 .sec_2 .menu_car .price {
+  padding-top: 100px;
+}
 body .sec2 .sec_2 .menu_car .price h1 {
   text-decoration: none;
   color: black;
-  font-size: 55px;
+  font-size: 45px;
   font-weight: 800;
-  font-family: none;
-  width: 370px;
+  font-family: Syne;
+  width: 550px;
 }
 body .sec2 .sec_2 .menu_car .price h3 {
   text-decoration: none;
   color: rgb(152, 152, 152);
   font-size: 21px;
-  font-weight: 800;
-  font-family: none;
-  width: 150px;
+  font-weight: 600;
+  font-family: Syne;
+  width: 240px;
   margin: 25px 0 10px 0;
 }
 body .sec2 .sec_2 .menu_car .price h2 {
   text-decoration: none;
   color: black;
   font-size: 45px;
-  font-weight: 400;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
   width: 150px;
 }
 body .sec2 .sec_2 .menu_car .price p {
   text-decoration: none;
   color: rgb(152, 152, 152);
   font-size: 18px;
-  font-weight: 400;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
   width: 450px;
   margin-top: 25px;
 }
@@ -238,7 +250,7 @@ body .sec2 .sec_2 .menu_car .plus_minus {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 260px;
+  width: 300px;
   margin: 50px 0 40px 0;
 }
 body .sec2 .sec_2 .menu_car .plus_minus .minus {
@@ -246,7 +258,7 @@ body .sec2 .sec_2 .menu_car .plus_minus .minus {
   color: black;
   font-size: 25px;
   font-weight: 400;
-  font-family: none;
+  font-family: Syne;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -265,16 +277,16 @@ body .sec2 .sec_2 .menu_car .plus_minus .minus:hover {
 body .sec2 .sec_2 .menu_car .plus_minus .number_pl_mn {
   text-decoration: none;
   color: black;
-  font-size: 35px;
-  font-weight: 400;
-  font-family: none;
+  font-size: 45px;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .plus_minus .plus {
   text-decoration: none;
   color: black;
   font-size: 25px;
   font-weight: 400;
-  font-family: none;
+  font-family: Syne;
   border-radius: 50px;
   width: 30px;
   height: 30px;
@@ -294,17 +306,18 @@ body .sec2 .sec_2 .menu_car .plus_minus .b_now {
   text-decoration: none;
   color: rgb(151, 1, 1);
   font-size: 16px;
-  font-weight: 400;
-  font-family: none;
+  font-weight: 700;
+  font-family: Syne;
   border: none;
   background: none;
   padding: 15px 25px;
   transition: 0.2s ease-in;
+  border: 1px solid rgb(189, 70, 70);
+  border-radius: 50px;
 }
 body .sec2 .sec_2 .menu_car .plus_minus .b_now:hover {
   background: rgb(189, 70, 70);
   color: white;
-  border-radius: 50px;
 }
 body .sec2 .sec_2 .menu_car .specific {
   display: grid;
@@ -315,6 +328,11 @@ body .sec2 .sec_2 .menu_car .specific {
 body .sec2 .sec_2 .menu_car .specific .spc_1 {
   grid-column: 1/2;
   grid-row: 1/2;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .specific .spc_2 {
   grid-column: 1/2;
@@ -334,8 +352,8 @@ body .sec2 .sec_2 .menu_car .specific .spc_2 p {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 800;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .specific .spc_3 {
   grid-column: 2/3;
@@ -355,8 +373,8 @@ body .sec2 .sec_2 .menu_car .specific .spc_3 p {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 800;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .specific .spc_4 {
   grid-column: 1/2;
@@ -376,8 +394,8 @@ body .sec2 .sec_2 .menu_car .specific .spc_4 p {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 800;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .specific .spc_5 {
   grid-column: 2/3;
@@ -397,8 +415,8 @@ body .sec2 .sec_2 .menu_car .specific .spc_5 p {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 800;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .specific .spc_6 {
   grid-column: 1/2;
@@ -419,18 +437,18 @@ body .sec2 .sec_2 .menu_car .specific .spc_6 p {
   color: black;
   font-size: 20px;
   font-weight: 500;
-  font-family: none;
+  font-family: Syne;
 }
 body .sec2 .sec_2 .menu_car .color_car p {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  font-weight: 800;
-  font-family: none;
+  font-weight: 500;
+  font-family: Syne;
   margin-bottom: 20px;
 }
-body .sec2 .sec_2 .menu_car .color_car .white {
-  background-color: white;
+body .sec2 .sec_2 .menu_car .color_car .red {
+  background-color: #FD3B3B;
   border: 1px solid;
   border-radius: 50px;
   width: 30px;
@@ -444,11 +462,16 @@ body .sec2 .sec_2 .menu_car .color_car .black {
   height: 30px;
   margin: 0 15px;
 }
-body .sec2 .sec_2 .menu_car .color_car .blue {
-  background-color: blue;
+body .sec2 .sec_2 .menu_car .color_car .white {
+  background-color: white;
   border: 1px solid;
-  border-color: blue;
+  border-color: black;
   border-radius: 50px;
   width: 30px;
   height: 30px;
+}
+
+@font-face {
+  font-family: Syne;
+  src: url(/shrift/Syne-VariableFont_wght.ttf);
 }/*# sourceMappingURL=style.css.map */
